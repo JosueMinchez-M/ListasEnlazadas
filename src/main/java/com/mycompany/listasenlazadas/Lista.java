@@ -26,4 +26,17 @@ public class Lista {
             inicio = new Nodo(d, inicio);
         }
     }
+    
+    //Método que nos dice cuantos elementos se encuentran en la lista.
+    public int cantidadNodos(){
+        return cont;
+    }
+    //Método mostrar lista.
+    public void mostrarLista(){
+       Nodo aux = inicio;
+       while(aux != null){
+           System.out.print("[" + aux.dato + "]");
+           aux = aux.siguiente;
+       }
+    }
 }
